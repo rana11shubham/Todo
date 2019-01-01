@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Todo List</title>
+    <link rel="stylesheet" type="text/css" href="/assets/todo.css">
+			<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+				<script type="text/javascript" src="/assets/lib/jquery-2.2.4.min.js"></script>
+  </head>
+  <body>
+    <div id="container">
+					<h1>To-Do List
+						<i class="fa fa-plus"></i>
+					</h1>
+				  <form class="form-group">
+					<input type="text" name="todo" placeholder="Add New Todo">
+						<ul>
+              <% for(var i=0;i<todo.length;i++){%>
+							<li>
+								<span>
+									<i class="far fa-trash-alt"></i>
+								</span><%=todo[i]%>
+                <%}%>
+                </li>
+						</ul>
+					</form>
+					</div>
+          <script type="text/javascript" src="/assets/todo.js"></script>
+  </body>
+</html>
